@@ -7,35 +7,13 @@
 }
 
 :root {
-  --text-color: white;
-  --bg-url: url("./assets/bg-mobile.jpg");
-  --stroke-color: rgba(255, 255, 255, 0.5);
+  --text-color: black;
+  --bg-url: url("./assets/bg-mobile-LA.png");
+  --stroke-color: #d9bb68;
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color: rgba(255, 255, 255, 0.05);
   --switch-bg-url: url(./assets/moon-stars.svg);
   --highlight-color: rgba(255, 255, 255, 0.2);
-}
-
-.light {
-  --text-color: black;
-  --bg-url: url("./assets/bg-mobile-light.jpg");
-  --stroke-color: rgba(0, 0, 0, 0.5);
-  --surface-color: rgba(0, 0, 0, 0.05);
-  --surface-color-hover: rgba(0, 0, 0, 0.02);
-  --switch-bg-url: url(./assets/sun.svg);
-  --highlight-color: rgba(0, 0, 0, 0.1);
-}
-
-.light img#light {
-  display: block;
-}
-
-.light img#dark {
-  display: none;
-}
-
-.light #switch button {
-  animation: slide-in 0.2s forwards;
 }
 
 body {
@@ -67,7 +45,7 @@ body * {
 /* profile */
 #profile {
   text-align: center;
-  padding: 24px;
+  padding: 12px;
 }
 
 #profile img {
@@ -75,6 +53,7 @@ body * {
 }
 
 #profile p {
+  color: black;
   font-weight: 500;
   line-height: 24px;
   margin-top: 8px;
@@ -104,7 +83,7 @@ body * {
   animation: slide-back 0.2s;
 }
 
-#switch button:hover{
+#switch button:hover {
   outline: 8px solid var(--highlight-color);
 }
 
@@ -125,7 +104,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  padding: 24px 0;
+  padding: 8px 0;
 }
 
 ul li a {
@@ -217,8 +196,8 @@ img#dark {
 
 /* media queries */
 @media (min-width: 700px) {
-  :root{
-    --bg-url: url(./assets/bg-desktop.jpg);
+  :root {
+    --bg-url: url(./assets/bg-desktop-LA.png);
   }
 
   .light {
@@ -229,7 +208,7 @@ img#dark {
 /* animation */
 
 @keyframes slide-in {
-  from{
+  from {
     left: 0;
   }
   to {
@@ -238,7 +217,7 @@ img#dark {
 }
 
 @keyframes slide-back {
-  from{
+  from {
     left: 50%;
   }
   to {
